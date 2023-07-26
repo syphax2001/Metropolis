@@ -1,0 +1,48 @@
+@keyframes nav-top-botom {
+    from {
+      transform: translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    position: relative;
+    font-family: $font1;
+    animation: nav-top-botom 0.3s forwards ease-in-out;
+    .center{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        right: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+    .right{
+        li{
+            margin: 15px 10px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        li{
+            margin: 5px 10px;
+        }
+    }
+}
